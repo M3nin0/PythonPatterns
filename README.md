@@ -1,4 +1,4 @@
-# PythonPatters
+# PythonPatterns
 
 Padrões de projetos implementados em Python.
 
