@@ -56,9 +56,8 @@ e a lógica original seja reutilizada.
 '''
 
 # Template utilizada no padrão de projeto
-class TemplateDeImpostoCondicional(Imposto):
+class TemplateDeImpostoCondicional(metaclass = ABCMeta, Imposto):
 
-	__metaclass__ = ABCMeta
 	# Ducktyping na template
 	def calcula(self, orcamento):
 		if self.deve_usar_maxima_taxacao(orcamento):
