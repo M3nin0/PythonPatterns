@@ -10,8 +10,7 @@ limitar e saber quais serão as proximas classes (Estados)
 
 from abc import ABCMeta, abstractmethod
 
-class EstadoDeOrcamento(object):
-	__metaclass__ = ABCMeta
+class EstadoDeOrcamento(metaclass=ABCMeta, object):
 
 	@abstractmethod
 	def aplica_desconto_extra(self, orcamento):
